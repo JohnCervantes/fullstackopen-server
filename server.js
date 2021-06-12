@@ -4,7 +4,7 @@ import express from 'express'
 import typeDefs from './typedefs/index.js'
 import resolvers from './resolvers/index.js'
 import connectMongo from './config/mongoose.js'
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 8080;
 const app = express();
 
 // Establish connection to the database
