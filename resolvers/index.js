@@ -2,7 +2,7 @@ import animalModel from '../models/animal.js'
 
 const resolvers = {
     Query: {
-        allAnimals: async (parent, args, context) => { 
+        animals: async (parent, args, context) => { 
             const result = await animalModel.find({});
             return result;
         }

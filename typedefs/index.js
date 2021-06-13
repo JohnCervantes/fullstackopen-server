@@ -7,7 +7,7 @@ const typeDefs = gql`
         age: Int!
       }
     type Query {
-        allAnimals: [animal]
+        animals: [animal]
     }
     type Mutation {
         addAnimal(name: String, color: String, age: String): animal
