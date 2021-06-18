@@ -1,7 +1,6 @@
 import mongoose from 'mongoose'
 
 const animal = new mongoose.Schema({ 
-    _id: String,
     name: String,
     color: String,
     age: Number
