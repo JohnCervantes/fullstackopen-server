@@ -12,7 +12,7 @@ connectMongo();
 
 app.use(cors());
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const server = new ApolloServer({ typeDefs, resolvers, introspection: true, playground: true });
 server.applyMiddleware({ app });
 
 app.listen(port , () => console.info(`Server started on port ${port}`));
